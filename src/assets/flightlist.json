@@ -1,0 +1,34 @@
+[
+    {
+        "FlightFrom": "Bangalore1 (BLR)",
+        "Flightto": "Kolkata1 (CCU)",
+        "Airlines": "Jet Airways1",
+        "Date": "",
+        "Time": ""
+
+    },
+    {
+        "FlightFrom": "Aangalore2 (BLR)",
+        "Flightto": "Kolkata2 (CCU)",
+        "Airlines": "Jet Airways2",
+        "Date": "",
+        "Time": ""
+
+    },
+    {
+        "FlightFrom": "Cangalore3 (BLR)",
+        "Flightto": "Kolkata3 (CCU)",
+        "Airlines": "Jet Airways3",
+        "Date": "",
+        "Time": ""
+
+    },
+    {
+        "FlightFrom": "Dangalore4 (BLR)",
+        "Flightto": "Kolkata4 (CCU)",
+        "Airlines": "Jet Airways4",
+        "Date": "",
+        "Time": ""
+
+    }
+]

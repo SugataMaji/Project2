@@ -1,0 +1,61 @@
+<div class="row">
+  <!-- <input type="text" name="search" class="form-control" placeholder="Search" [(ngModel)]="searchData">-->
+   <div class="col-md-6" style=" margin-bottom: 15px; ">
+     <SPAN class="mylebel"><span class="glyphicon glyphicon-arrow-up"></span> Depart</SPAN>
+   <select name="search" class="form-control" placeholder="Search" [(ngModel)]="searchData">
+     <option [value]="FlightFrom" [disabled]="true" selected>Select Flight From </option>
+     <option  *ngFor="let user of users">{{user.FlightFrom}}</option>
+   </select>
+   </div>
+   <div class="col-md-6" style=" margin-bottom: 15px; ">
+     <SPAN class="mylebel"><span class="glyphicon glyphicon-arrow-down"></span> Arrive</SPAN>
+   <select name="search" class="form-control" placeholder="Search" [(ngModel)]="searchData">
+     <option [value]="FlightTo" [disabled]="true" selected>Select Flight To </option>
+     <option  *ngFor="let user of users">{{user.FlightTo}}</option>
+   </select>
+   </div><br><br>
+   <div class="col-md-4">
+     <SPAN class="mylebel"><span class="glyphicon glyphicon-plane"></span> Airline</SPAN>
+   <select name="search" class="form-control" placeholder="Search" [(ngModel)]="searchData">
+     <option [value]="Airlines" [disabled]="true" selected>Select Airlines </option>
+     <option  *ngFor="let user of users">{{user.Airlines}}</option>
+   </select>
+   </div>
+   <div class="col-md-4">
+     <SPAN class="mylebel"><span class="glyphicon glyphicon-calendar"></span> Start Date</SPAN>
+   <select name="search" class="form-control" placeholder="Search" [(ngModel)]="searchData">
+     <option [value]="Depart" [disabled]="true" selected>Select Flight Depart date </option>
+     <option  *ngFor="let user of users">{{user.Departdate | date }}</option>
+   </select>
+   </div>
+   <div class="col-md-4">
+     <SPAN class="mylebel"><span class="glyphicon glyphicon-calendar"></span> End Date</SPAN>
+   <select name="search" class="form-control" placeholder="Search" [(ngModel)]="searchData">
+     <option [value]="Return" [disabled]="true" selected>Select Flight Return date </option>
+     <option  *ngFor="let user of users">{{user.Returndate | date }}</option>
+   </select>
+   </div><br><br>
+  
+
+<br><br>
+<table class="table table-striped">
+
+   <tr class="ftr">
+   <th>Depart <span class="glyphicon glyphicon-arrow-up"></span></th>
+   <th>Arrive <span class="glyphicon glyphicon-arrow-down"></span></th>
+   <th>Airline <span class="glyphicon glyphicon-plane"></span></th>
+   <th>Depart Date <span class="glyphicon glyphicon-calendar"></span></th>
+   <th>Return Date <span class="glyphicon glyphicon-calendar"></span></th>
+   </tr>
+   
+ <tr  *ngFor="let user of (users | orderBy | searchBy : searchData ); let i = index">
+    <td>{{user.FlightFrom}}</td>
+    <td>{{user.FlightTo}}</td>
+    <td>{{user.Airlines}}</td>
+    <td>{{user.Departdate | date }}</td>
+    <td>{{user.Returndate | date }}</td>
+ </tr>
+
+ </table>
+
+</div>

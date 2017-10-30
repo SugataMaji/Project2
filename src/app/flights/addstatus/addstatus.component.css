@@ -1,0 +1,19 @@
+.mylebel{
+    position: absolute;
+    top: -7px;
+    left: 24px;
+    background: #fff;
+    padding: 0 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 11px;
+    color: #ff0c37;
+}
+.ftr{
+    
+    background: #ff0c37 !important;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+
+}

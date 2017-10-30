@@ -1,0 +1,26 @@
+<div class="row">
+
+<br><br>
+<table class="table table-striped">
+
+   <tr class="ftr">
+   <th>Depart <span class="glyphicon glyphicon-arrow-up"></span></th>
+   <th>Arrive <span class="glyphicon glyphicon-arrow-down"></span></th>
+   <th>Airline <span class="glyphicon glyphicon-plane"></span></th>
+   <th>Depart Date <span class="glyphicon glyphicon-calendar"></span></th>
+   <th>Return Date <span class="glyphicon glyphicon-calendar"></span></th>
+   <th>Status <span class="glyphicon glyphicon-calendar"></span></th>
+   </tr>
+   
+ <tr  *ngFor="let user of users">
+    <td>{{user.FlightFrom}}</td>
+    <td>{{user.FlightTo}}</td>
+    <td>{{user.Airlines}}</td>
+    <td>{{user.Departdate | date }}</td>
+    <td>{{user.Returndate | date }}</td>
+     <td>OnTime</td>
+ </tr>
+
+ </table>
+
+</div>

@@ -1,0 +1,52 @@
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+    <img src="assets/logo.png">
+    </div>
+    <ul class="nav navbar-nav pull-right">
+      <li *ngIf="auth.isAuthenticated()" class="loginuser">Welcome {{profile?.name}}</li>
+        <li *ngIf="!auth.isAuthenticated()" class="loginuser">Welcome Guest</li>
+      <li class="active"><a
+        class="btn btn-primary btn-margin menua"
+        routerLink="/">
+          Home
+      </a></li>
+      <li><a routerLink="/addflight"
+        class="btn btn-primary btn-margin menua"
+        *ngIf="auth.isAuthenticated()">
+          Add Flight
+      </a></li>
+      <li><a routerLink="/status"
+        class="btn btn-primary btn-margin menua"
+        *ngIf="auth.isAuthenticated()">
+          Flight Status
+      </a></li>
+
+      <li><a
+        class="btn btn-primary btn-margin menua"
+        *ngIf="!auth.isAuthenticated()"
+        (click)="auth.login()">
+          Log In
+      </a></li>
+      <li><a
+        class="btn btn-primary btn-margin menua"
+        *ngIf="auth.isAuthenticated()"routerLink="/profile">
+          Profile
+      </a></li>
+      <li><a
+        class="btn btn-primary btn-margin menua"
+        *ngIf="auth.isAuthenticated()"
+        (click)="auth.logout()">
+          Log Out
+      </a></li>
+
+    </ul>
+  </div>
+</nav>
+
+<main class="container">
+  <router-outlet></router-outlet>
+</main>
+<footer>
+  <p style="margin:0;">Developed by Sugata Maji</p>
+</footer>

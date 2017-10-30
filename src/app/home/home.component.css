@@ -1,0 +1,16 @@
+.searchflight{
+    background: #3f51b5;
+    color: #fff;
+    font-size: 15px;
+    padding: 10px 20px;
+    text-decoration: blink;
+    transition-duration: 0.3s;
+    border-radius: 3px;
+}
+.searchflight:hover{
+    background: #2539a9;
+    color: #fff;
+    font-size: 15px;
+    padding: 10px 20px;
+    text-decoration: blink;
+}

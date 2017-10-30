@@ -1,0 +1,47 @@
+<form  [formGroup]="addflightform" (ngSubmit)="addflightdetails()">
+  <h1>Add Flights</h1>
+    <div>
+       <input type="text" class="form-control" formControlName="FlightFrom" placeholder="FlightFrom" required >
+      
+     </div>
+     <div>
+       <input type="text" class="form-control"   formControlName="FlightTo" placeholder="FlightTo" required >
+     
+     </div>
+     <div >
+            <select class="txt-box"  formControlName="Airlines" class="form-control" required>
+              <option [value]="null" [disabled]="true">Select Airline </option>
+              <option *ngFor="let a of airlinelist" [ngValue]="a.Airlinename">
+               {{a.Airlinename}}
+                            </option>
+                         </select>
+          </div>
+     <div>
+       <input type="date" class="form-control"  formControlName="Departdate" placeholder="Departdate" required>
+    
+     </div>
+     <div>
+       <input type="date" class="form-control"  formControlName="Returndate" placeholder="Returndate" required>
+     
+     </div>
+     <input type="submit" class="form-control mybtn"  value="Add">
+    
+ </form>  
+<!-- <table>
+   <tr>
+   <th>FlightFrom</th>
+   <th>FlightTo</th>
+   <th>Airline</th>
+   <th>Departdate</th>
+   <th>Returndate</th>
+   </tr>
+   
+ <tr  *ngFor="let user of users">
+    <td>{{user.FlightFrom}}</td>
+    <td>{{user.FlightTo}}</td>
+    <td>{{user.Airline}}</td>
+    <td>{{user.Departdate}}</td>
+    <td>{{user.Returndate}}</td>
+ </tr>
+
+ </table>-->

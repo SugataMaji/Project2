@@ -1,0 +1,43 @@
+[
+    {
+        "ID" :"001",
+        "Airlinename":" IndiGo"
+    },
+        {
+        "ID" :"002",
+        "Airlinename":" Jet Airways"
+    },
+        {
+        "ID" :"003",
+        "Airlinename":" Air India"
+    },
+    {
+        "ID" :"004",
+        "Airlinename":"  British Airways"
+    },
+        {
+        "ID" :"005",
+        "Airlinename":"  Emirates"
+    },
+        {
+        "ID" :"006",
+        "Airlinename":"  Etihad Airways"
+    },
+        {
+        "ID" :"007",
+        "Airlinename":"   Fly Dubai"
+    },
+        {
+        "ID" :"008",
+        "Airlinename":"  Lufthansa"
+    },
+        {
+        "ID" :"009",
+        "Airlinename":" Qatar Airways"
+    },
+     {
+        "ID" :"010 ",
+        "Airlinename":"SpiceJet"
+    }
+
+]
